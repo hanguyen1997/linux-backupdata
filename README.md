@@ -2,26 +2,43 @@
 
 [Linux] Backup data linux
 
--  login database
-		sudo mysql or  mysql -u root -p
-    
-- Create user backup
-		GRANT LOCK TABLES, SELECT ON DATABASE_NAME.* TO ‘NAME’_USER@‘localhost' IDENTIFIED BY ‘PASSWORD’;
-		FLUSH PRIVILEGES;
+## Setup & start
+#### 1.login database
 
-- Create folder backup data
-		cd ~
-		mkdir Database_Backup 
+```bash
+sudo mysql or  mysql -u root -p
+```
+
+#### 2.Create user backup
+```bash 
+GRANT LOCK TABLES, SELECT ON DATABASE_NAME.* TO ‘NAME’_USER@‘localhost' IDENTIFIED BY ‘PASSWORD’;
+```
+```bash
+FLUSH PRIVILEGES;
+```
+
+#### 3.Create folder backup data
+```bash 
+cd ~
+mkdir Database_Backup 
+```
+
+#### 4.Create scripts backup
+```bash
+touch db_backup.sh
+nano db_backup.sh
+sudo chmod 700 db_backup.sh
+```
     
-- Create scripts backup
-		touch db_backup.sh
-		nano db_backup.sh
-		sudo chmod 700 db_backup.sh
+#### 4.Create file log 
+```bash
+touch db_backup.log
+sudo chmod 700 db_backup.log
+```
     
-- Create file log 
-		touch db_backup.log
-		sudo chmod 700 db_backup.log
-    
-- Create cron job backup
-		crontab -e
-		11 00 * * * /home/db_backup.sh  (At 00:11)
+### 5.Create cron job backup
+(At 00:11)
+```bash
+crontab -e
+11 00 * * * /home/db_backup.sh
+```
