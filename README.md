@@ -13,7 +13,11 @@ Before you continue, ensure you meet the following requirements:
 #### 1.login database
 
 ```bash
-sudo mysql or  mysql -u root -p
+sudo mysql
+```
+ or
+```bash
+mysql -u root -p
 ```
 
 #### 2.Create user backup
@@ -33,7 +37,11 @@ mkdir Database_Backup
 #### 4.Create scripts backup
 ```bash
 touch db_backup.sh
+```
+```bash
 nano db_backup.sh
+```
+```bash
 sudo chmod 700 db_backup.sh
 ```
     
@@ -44,8 +52,10 @@ sudo chmod 700 db_backup.log
 ```
     
 ### 5.Create cron job backup
-(At 00:11)
+(At 00:11 daily)
 ```bash
 crontab -e
+```
+```bash
 11 00 * * * /home/db_backup.sh
 ```
