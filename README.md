@@ -1,7 +1,7 @@
 # Linux-backupdata
 
 ## About
-Daily automatic backup of MySQL database
+Daily automatic backup of MySQL database by cron job
 
 ## Prerequisites
 
