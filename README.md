@@ -1,6 +1,13 @@
-# Linux--backupdata
+# Linux-backupdata
 
-[Linux] Backup data linux
+## About
+Daily automatic backup of MySQL database
+
+## Prerequisites
+
+Before you continue, ensure you meet the following requirements:
+
+* You are using a Linux . Windows is not currently supported.
 
 ## Setup & start
 #### 1.login database
