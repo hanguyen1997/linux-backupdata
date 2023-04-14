@@ -35,11 +35,7 @@ mkdir Database_Backup
 #### 4.Create scripts backup
 ```bash
 touch db_backup.sh
-```
-```bash
 nano db_backup.sh
-```
-```bash
 sudo chmod 700 db_backup.sh
 ```
     
