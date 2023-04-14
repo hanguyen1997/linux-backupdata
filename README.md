@@ -23,8 +23,6 @@ mysql -u root -p
 #### 2.Create user backup
 ```bash 
 GRANT LOCK TABLES, SELECT ON DATABASE_NAME.* TO ‘NAME’_USER@‘localhost' IDENTIFIED BY ‘PASSWORD’;
-```
-```bash
 FLUSH PRIVILEGES;
 ```
 
