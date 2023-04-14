@@ -7,7 +7,7 @@ Daily automatic backup of MySQL database by cron job
 
 Before you continue, ensure you meet the following requirements:
 
-* You are using a Linux . Windows is not currently supported.
+* You are using a Linux.
 
 ## Setup & start
 #### 1. login database
